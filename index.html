@@ -8,49 +8,46 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="calculator">
-        <div class="input"></div>
-        <div class="first__calc">
-          <div class="calc__value clear">c</div>
-          <div class="calc__value x2">x2</div>
-          <div class="calc__value x3">x3</div>
-          <div class="calc__value">ac</div>
-        </div>
-        <div class="second__calc">
-          <div class="calc__value">1</div>
-          <div class="calc__value">2</div>
-          <div class="calc__value">3</div>
-          <div class="calc__value">/</div>
-        </div>
-        <div class="third__calc">
-          <div class="calc__value">4</div>
-          <div class="calc__value">5</div>
-          <div class="calc__value">6</div>
-          <div class="calc__value">x</div>
-        </div>
-        <div class="fourth__calc">
-          <div class="calc__value">7</div>
-          <div class="calc__value">8</div>
-          <div class="calc__value">9</div>
-          <div class="calc__value">-</div>
-        </div>
-        <div class="fourth__calc">
-          <div class="calc__value">.</div>
-          <div class="calc__value">0</div>
-          <div class="calc__value equal">=</div>
-          <div class="calc__value">+</div>
+    <section class="calculator">
+      <div class="container">
+        <div class="calculator__wrapper">
+          <p align="center">Hello</p>
+          <div class="calculator__output"></div>
+          <div class="calculator__button">
+            <div class="single__row">
+              <div class="btn delete">DEL</div>
+              <div class="btn square">X<sup>2</sup></div>
+              <div class="btn cube">X<sup>3</sup></div>
+              <div class="btn">/</div>
+            </div>
+            <div class="single__row">
+              <div class="btn">7</div>
+              <div class="btn">8</div>
+              <div class="btn">9</div>
+              <div class="btn">X</div>
+            </div>
+            <div class="single__row">
+              <div class="btn">6</div>
+              <div class="btn">5</div>
+              <div class="btn">4</div>
+              <div class="btn">-</div>
+            </div>
+            <div class="single__row">
+              <div class="btn">1</div>
+              <div class="btn">2</div>
+              <div class="btn">3</div>
+              <div class="btn">+</div>
+            </div>
+            <div class="single__row">
+              <div class="btn">0</div>
+              <div class="btn">.</div>
+              <div class="btn equal">=</div>
+              <!-- <div class="btn">+</div> -->
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <small
-          >Created By
-          <a target="_blank" href="http://facebook.com/sdmmobin"
-            >Mobin Himu</a
-          ></small
-        >
-      </div>
-    </div>
-    <script src="./app.js"></script>
+    </section>
+    <script src="./calculator.js"></script>
   </body>
 </html>

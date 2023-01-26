@@ -1,61 +1,61 @@
-.input {
-  border: none;
-  background-color: #dddd;
-  outline: none;
-  padding: 15px;
-  display: block;
-  width: 90%;
-  text-align: right;
-  font-size: 1.25rem;
-  height: 25px;
-  color: black;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  color: aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  user-select: none;
 }
 .container {
-  transform: translateY(25%);
-}
-.calculator {
-  width: 250px;
-  border: 1px solid grey;
-  overflow: hidden;
+  max-width: 95%;
   margin: 0 auto;
 }
-.first__calc,
-.second__calc,
-.third__calc,
-.fourth__calc {
-  display: flex;
+
+.calculator__wrapper {
+  background-color: #15173c;
+  border-radius: 5px;
+  padding: 20px;
 }
-.calc__value {
+.single__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+.calculator__output {
+  height: 60px;
+  overflow: hidden;
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+}
+.btn {
+  width: 100%;
   height: 50px;
-  width: 40%;
-  background-color: black;
-  border: 1px solid #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-weight: 600;
 }
-.calc__value:hover {
-  background-color: rgba(0, 0, 0, 0.795);
+.equal {
+  background-color: #f8534c;
+  border-radius: 10px;
 }
-small {
-  display: block;
-  text-align: center;
-  margin-top: 40px;
-  font-size: 1rem;
-  color: black;
+.btn__style {
+  background-color: #20246ed5;
+  border-radius: 10px;
 }
-small a {
-  display: inline-block;
-  padding-left: 10px;
-  text-decoration: none;
-  font-weight: bold;
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
 }
-small a:hover {
-  color: chocolate;
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
